@@ -1,0 +1,89 @@
+:root {
+    --white:#FFFFFF;
+    --black: #2c2d2a;
+
+}
+
+html {
+    font-size: 62.5%;/*Se utiliza para resetear los pixeles y utilizae rem.*/
+    box-sizing: border-box;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    font-size: 1.6rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fontfamilypriamary);
+} */
+
+/*Header*/
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.header__logotipo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2rem;
+}
+.header__logotipo--logo {
+
+}
+.header__navigation {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+.header__navigation--text {
+
+    text-decoration: none;
+    font-family: Helvetica;
+    
+}
+/*Hero*/
+.hero {
+    background-image: url(../img/Mask\ Group.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    position: relative;
+}
+.hero__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content--title {
+    font-size: 2.8rem;
+    text-align: center;
+} 
+.hero__content--text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 10rem;
+}
+.hero__content--title,
+.hero__content--text {
+    font-family: Arial;
+    font-weight: 400;
+    color: var(--white);
+}
