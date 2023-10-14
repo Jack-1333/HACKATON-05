@@ -29,30 +29,31 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    margin-top: 2rem;
 }
 
 .header__logotipo {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 2rem;
-}
-.header__logotipo--logo {
-
+    margin: 0 2rem;
 }
 .header__navigation {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-top: 2rem;
+    margin: 0 2rem;
     gap: 3rem;
 }
-.header__navigation--text {
+.header__navigation--home {
+    color: var(--primaryfont);
+    font-weight: 700;
 
+}
+.header__navigation a {
     text-decoration: none;
     font-family: Helvetica;
-    
+    font-size: 2rem;
 }
 /*Hero*/
 .hero {
