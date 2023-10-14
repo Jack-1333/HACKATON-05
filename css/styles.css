@@ -1,7 +1,7 @@
 :root {
     --white:#FFFFFF;
     --black: #2c2d2a;
-    --font: #1F3F68;
+    --colorfont: #1F3F68;
 
 }
 
@@ -50,7 +50,7 @@ body {
     gap: 3rem;
 }
 .header__navigation--home {
-    color: var(--primaryfont);
+    color: var(--colorfont);
     font-weight: 700;
 
 }
