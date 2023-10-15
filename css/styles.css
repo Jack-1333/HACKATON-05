@@ -1,8 +1,12 @@
 :root {
     --white:#FFFFFF;
-    --black: #2c2d2a;
+    --black: #000000;
     --fuente:#1F3F68;
     --backgroundsearch: #F4F4F4;
+    --blue1: #356EAD;
+    --blue2: #1F3F68;
+
+
 
 }
 
@@ -116,5 +120,13 @@ body {
     width: 60rem;
     height: 3rem;
 }
+.content-1 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.content-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+}
 
