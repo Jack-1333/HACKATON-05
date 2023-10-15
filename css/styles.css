@@ -5,6 +5,7 @@
     --backgroundsearch: #F4F4F4;
     --blue1: #356EAD;
     --blue2: #1F3F68;
+    --footercolor: #316099;
 }
 
 html {
@@ -149,7 +150,8 @@ body {
 }
 .content3 {
     display: grid;
-    grid-template-rows: 10% 18% 18% 18% 18% 18% 18%;
+    grid-template-rows: 10% repeat(5, 18%);
+    
 }
 .content3__text-image {
     display: grid;
@@ -158,4 +160,26 @@ body {
 .content3__image-edit {
     max-width: 100%;
     max-height: 100%;
+}
+.content4 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--footercolor);
+    color: var(--white);
+}
+.content4__texts-link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content4__textsicons-inf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.content4__textsicons {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.content4__texts {
+    display: grid;
+    grid-template-rows: 10% 90%;
 }
