@@ -2,6 +2,7 @@
     --white:#FFFFFF;
     --black: #2c2d2a;
     --fuente:#1F3F68;
+    --backgroundsearch: #F4F4F4;
 
 }
 
@@ -54,7 +55,7 @@ body {
     font-weight: 700;
 
 }
-.header__navigation a {
+.header__navigations a {
     text-decoration: none;
     font-family: Helvetica;
     font-size: 2rem;
@@ -92,3 +93,28 @@ body {
     font-weight: 400;
     color: var(--white);
 }
+
+.searchwrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 3rem 12rem;
+    background-color: var(--backgroundsearch);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.searchwrapper__icon-image {
+    height: 2rem;
+
+}
+.searchwrapper__input-text {
+    border: none;
+    background-color: var(--backgroundsearch);
+    font-family: Arial;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 60rem;
+    height: 3rem;
+}
+
+
