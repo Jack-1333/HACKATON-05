@@ -1,7 +1,6 @@
 :root {
     --white:#FFFFFF;
     --black: #000000;
-    --fuente:#1F3F68;
     --backgroundsearch: #F4F4F4;
     --blue1: #356EAD;
     --blue2: #1F3F68;
@@ -25,55 +24,102 @@ body {
     max-width: 90rem;
     margin: 0 auto;
 }
-/*Fuentes personalizados*/
+/*Tipografías Header-Navigation*/
+.header__navigations a { 
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 2rem;
+}
+.header__navigation--home {
+    color: var(--blue2);
+}
+.header__navigation {
+    color: var(--black);
+}
+
+/*Tipografías Hero*/
+.hero__content-title {
+    font-size: 4.4rem;
+} 
+.hero__content-paragraph {
+    font-size: 2rem;
+}
+.hero__content-title,
+.hero__content-paragraph {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 400;
+    color: var(--white);
+    width: 78rem;
+}
+
+/*Tipografía searchwrapper*/
+.searchwrapper__input-text {
+    font-family: Arial;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+::placeholder {
+    color: var(--blue2);
+}
+/*Tipografía Content*/
 .title-unit {
     font-family: Helvetica;
     color: var(--blue1);
-    text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2rem;
+    text-transform: uppercase;
     Margin: 0;
 }
-.content1__text1-subtitle1 h3 {
+.subtitle1 {
     font-family: Helvetica;
     color: var(--blue2);
     font-weight: 700;
     font-size: 3.6rem;
     margin: 0;
 }
-.content1__text1-paragraph1 {
+.subtitle2 {
+    font-family: Helvetica;
+    color: var(--blue2);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+}
+.subtitle3 {
+    font-family: Helvetica;
+    color: var(--blue2);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.paragraph {
     font-family: Arial;
     color: var(--black);
     font-weight: 400;
     font-size: 1.6rem;
     margin: 1.5rem 1.5rem 0 0;
 }
-.content1__text1-inf1 {
+.text-autor {
     font-family: Helvetica;
     color: var(--blue2);
     font-weight: 700;
     font-size: 1.4rem;
     margin: 1.5rem 0 0 0;
 }
-.content1__text1-inf2 {
+.text-fecha {
     font-family: Arial;
     color: var(--blue2);
     font-weight: 400;
     font-size: 1.4rem;
-    margin: .5rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
-/* h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-family: var(--fontfamilypriamary);
-} */
 
 /*Header*/
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
-
 }
 
 .header__logotipo {
@@ -91,16 +137,7 @@ body {
     margin: 0 2rem;
     gap: 3rem;
 }
-.header__navigation--home {
-    color: var(--fuente);
-    font-weight: 700;
 
-}
-.header__navigations a {
-    text-decoration: none;
-    font-family: Helvetica;
-    font-size: 2rem;
-}
 /*Hero*/
 .hero {
     background-image: url(../img/Mask\ Group.svg);
@@ -119,22 +156,6 @@ body {
     align-items: center;
 }
 
-.hero__content-title {
-    font-size: 2.8rem;
-    text-align: center;
-} 
-.hero__content-text {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0 10rem;
-}
-.hero__content-title,
-.hero__content-text {
-    font-family: Arial;
-    font-weight: 400;
-    color: var(--white);
-}
-
 .searchwrapper {
     display: flex;
     justify-content: left;
@@ -151,11 +172,9 @@ body {
 .searchwrapper__input-text {
     border: none;
     background-color: var(--backgroundsearch);
-    font-family: Arial;
-    font-size: 1.6rem;
-    font-weight: 400;
     width: 60rem;
     height: 3rem;
+    outline: 0;/*Borra el contono del input al momento de escribir en la web*/
 }
 .content1 {
     display: grid;
@@ -186,7 +205,6 @@ body {
 .content1__icons1-inf2 {
     height: 2rem;
     margin: 0 1.5rem 0 0;
-
 }
 .content1__image1 {
     display: flex;
