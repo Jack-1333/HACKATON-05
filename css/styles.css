@@ -22,13 +22,19 @@ body {
 
 }
 .container {
-    max-width: 94.1rem;
-    max-height: 104.4rem;
+    max-width: 100%;
+    max-height: 100%;
+    width: 94.1rem;
+    /* max-width: 94.1rem;
+    max-height: 104.4rem; */
     margin: 0 auto;
 }
 .container2 {
-    max-width: 94.1rem;
-    max-height: 126rem;
+    max-width: 100%;
+    max-height: 100%;
+    width: 94.1rem;
+    /* max-width: 94.1rem;
+    max-height: 126rem; */
     margin: 5rem auto;
 }
 /*Tipografías Header-Navigation*/
@@ -84,6 +90,13 @@ body {
     font-weight: 700;
     font-size: 1.6rem;
     text-transform: uppercase;
+    Margin: 1rem;
+}
+.footer-unit-2 {
+    font-family: Arial;
+    color: var(--blue1);
+    font-weight: 400;
+    font-size: 1.6rem;
     Margin: 1rem;
 }
 .subtitle1 {
@@ -230,17 +243,17 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 .content1__icons1-inf1,.content1__icons1-inf2,
 .content2__icons1-inf1,.content2__icons1-inf2,
 .content3__icons1-inf1,.content2__icons1-inf2 {
     height: 2rem;
-    margin: 0 1.5rem 0 0;
+    /* margin: 0 1.5rem 0 0; */
 }
 .content1__image1 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 .content1__image1-edit {
     max-width: 100%;
@@ -257,16 +270,39 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 3rem;
-    column-gap: 1rem;
+    column-gap: 2rem;
 }
 .content2__textimage2 {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 54% 46%;
+    /* row-gap: 1rem; */
 
 }
+.content2__image2-1,
+.content2__image2-2,
+.content2__image2-3 {
+    display: flex;
+    align-items: center;
+}
+.content2__image2-1 {
+    justify-content: left;
+}
+.content2__image2-2 {
+    justify-content: center;
+}
+.content2__image2-3 {
+    justify-content: right;
+}
 .content2__text-image-edit {
-    height: 18rem;
-    width: 30rem;
+    max-width: 100%;
+    max-height: 100%;
+    width: 31.3rem;
+}
+.content2__text2 {
+    margin: 1rem 0 0 0;
+}
+.content2__text2icons2-inf {
+    margin: 1rem 0 0 0;
 }
 .content3 {
     display: grid;
@@ -281,6 +317,13 @@ body {
 .content3__image-edit {
     max-width: 100%;
     max-height: 100%;
+    width: 37rem;
+}
+.content3__text2-subtitle3 {
+    margin: 0 0 0 1rem;
+}
+.content3__text3icons3-inf {
+    margin: 9.5rem 0 0 0;
 }
 .content3__textfinal {
     display: grid;
