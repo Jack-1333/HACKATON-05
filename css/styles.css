@@ -4,6 +4,7 @@
     --backgroundsearch: #F4F4F4;
     --blue1: #356EAD;
     --blue2: #1F3F68;
+    --boton:#5A98D0;
     --footercolor: #316099;
 }
 
@@ -140,6 +141,36 @@ body {
     font-weight: 400;
     font-size: 1.4rem;
     margin: 1.5rem 1.5rem 0 0;
+}
+.content4__text1-title {
+    font-family: Helvetica;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 3.6rem;
+}
+.content4__text1-paragraph {
+    font-family: Arial;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.footer p  {
+    font-family: Arial;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.6rem;
+    opacity: 30%;
+
+}
+.content4__link a {
+    font-family: Arial;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: var(--boton);
+    padding: 2rem 6rem;
+    border-radius: 1px;
 }
 .text-autor {
     font-family: Helvetica;
@@ -364,33 +395,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    margin: 5rem;
+    margin: 8rem;
 }
 .content4__link  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 8rem;
 }
 
 .content4__texts4icons4-inf {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 5rem;
+    margin: 8rem;
     column-gap: 10rem;
 }
+.footer {
+    margin: 0 8rem;
+}
+
 .content4__textsicons, .content4__texts {
     display: grid;
     grid-template-rows: 15% 85%;
     row-gap: 3rem;
-    
 }
 .content4__text1icon {
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 2rem;
+}
+.content4__text2-title,
+.content4__text3-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.content4__text2-paragraph2,
+.content4__text3-paragraph2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    gap: 1rem;
+}
+
+.content4__text1-title h4 {
+    font-family: Helvetica;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin: 0;
 }
 .content4__text1-paragraph2 {
     display: grid;
@@ -402,7 +457,33 @@ body {
     justify-content: left;
     align-items: center;
     margin: 0;
+}
+.content4__text1-paragraph2 p {
+    font-family: Arial;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
 
+}
+.content4__text1-paragraph2 span {
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+.content4__text2-paragraph2 p,
+.content4__text3-paragraph2 p {
+    font-family: Helvetica;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+.content4__text2-title h4,
+.content4__text3-title h4 {
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
 }
 /* .content4__text2-paragraph,
 .content4__text3-paragraph {
